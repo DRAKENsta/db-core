@@ -21,30 +21,6 @@ A lightweight **file-based relational database engine** implemented entirely in 
 * File Handling (Extendable)
 * Exception Handling
 
-## Project Structure
-
-```text
-MiniDBCore/
-│
-├── README.md
-│
-└── src/
-    ├── Main.java
-    └── Database.java
-```
-
-## How It Works
-
-The application creates an in-memory database where each table is represented using Java collections.
-
-Example workflow:
-
-1. Create a table
-2. Insert records
-3. Retrieve all records
-
-Current implementation stores records in memory and prints them to the console.
-
 ## Example
 
 ```java
@@ -65,67 +41,3 @@ Output
 1|John|50000
 2|Alice|70000
 ```
-
-## Current Capabilities
-
-* Create Table
-* Insert Records
-* Display All Records
-
-## Future Enhancements
-
-* SQL Parser
-* File-based Storage
-* Update Records
-* Delete Records
-* WHERE Clause
-* ORDER BY
-* LIMIT
-* Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)
-* Primary Key Support
-* Indexing
-* Transactions
-* Query Optimizer
-* Binary Storage Engine
-* CSV Import/Export
-* Multi-threaded Query Execution
-
-## Learning Objectives
-
-This project was built to understand the core concepts behind relational database systems, including:
-
-* Database architecture
-* Storage engines
-* CRUD operations
-* Data structures
-* Object-Oriented Design
-* Collections Framework
-* Separation of Concerns
-
-## Build and Run
-
-Compile
-
-```bash
-javac src/*.java
-```
-
-Run
-
-```bash
-java -cp src Main
-```
-
-## Sample Output
-
-```text
-1|John|50000
-```
-
-## Project Goals
-
-The objective of MiniDB Core is to provide a minimal yet extensible database engine implemented entirely in Java. It serves as a foundation for experimenting with database concepts and can be expanded into a more complete SQL engine supporting parsing, indexing, persistence, and advanced query execution.
-
-## License
-
-This project is released under the MIT License and is free to use, modify, and distribute for educational and personal purposes.
